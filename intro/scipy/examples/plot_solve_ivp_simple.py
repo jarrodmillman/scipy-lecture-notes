@@ -11,14 +11,16 @@ import numpy as np
 import scipy as sp
 import matplotlib.pyplot as plt
 
+
 def calc_derivative(time, ypos):
-    return -2*ypos
+    return -2 * ypos
+
 
 t_span = (0, 4)
 solution = sp.integrate.solve_ivp(calc_derivative, t_span, (1,))
 
 plt.figure(figsize=(4, 3))
-plt.plot(solution.t, solution.y[0,:])
-plt.xlabel('t: Time')
-plt.ylabel('y: Position')
+plt.plot(solution.t, solution.y[0, :])
+plt.xlabel("t: Time")
+plt.ylabel("y: Position")
 plt.tight_layout()
