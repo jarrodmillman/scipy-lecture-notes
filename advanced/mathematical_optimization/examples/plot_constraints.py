@@ -26,11 +26,11 @@ for i in (1, 2):
             inline=1,
             fmt='%1.1f',
             fontsize=14)
-    plt.plot([-1.5, -1.5,  1.5,  1.5, -1.5],
-            [-1.5,  1.5,  1.5, -1.5, -1.5], 'k', linewidth=2)
-    plt.fill_between([ -1.5,  1.5],
+    plt.plot([-1.5, -1.5, 1.5, 1.5, -1.5],
+            [-1.5, 1.5, 1.5, -1.5, -1.5], 'k', linewidth=2)
+    plt.fill_between([ -1.5, 1.5],
                     [ -1.5, -1.5],
-                    [  1.5,  1.5],
+                    [  1.5, 1.5],
                     color='.8')
     plt.axvline(0, color='k')
     plt.axhline(0, color='k')

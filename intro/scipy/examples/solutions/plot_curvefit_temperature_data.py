@@ -14,7 +14,7 @@ For this, we will fit a periodic function.
 ############################################################
 import numpy as np
 
-temp_max = np.array([17,  19,  21,  28,  33,  38, 37,  37,  31,  23,  19,  18])
+temp_max = np.array([17, 19, 21, 28, 33, 38, 37, 37, 31, 23, 19, 18])
 temp_min = np.array([-62, -59, -56, -46, -32, -18, -9, -13, -25, -46, -52, -58])
 
 import matplotlib.pyplot as plt
@@ -30,8 +30,7 @@ plt.ylabel('Min and max temperature')
 
 import scipy as sp
 def yearly_temps(times, avg, ampl, time_offset):
-    return (avg
-            + ampl * np.cos((times + time_offset) * 2 * np.pi / times.max()))
+    return avg + ampl * np.cos((times + time_offset) * 2 * np.pi / times.max())
 
 res_max, cov_max = sp.optimize.curve_fit(yearly_temps, months,
                                       temp_max, [20, 10, 0])

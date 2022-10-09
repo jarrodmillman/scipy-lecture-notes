@@ -103,7 +103,7 @@ def rosenbrock_hessian_(x):
     y = 4*y + 3
     return 4*4*np.array((
                     (1 - 4*y + 12*x**2, -4*x),
-                    (             -4*x,    2),
+                    (             -4*x, 2),
                    ))
 
 

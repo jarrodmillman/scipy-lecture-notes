@@ -16,7 +16,7 @@ C = np.cos(X)
 S = np.sin(X)
 
 plt.plot(X, C, color="blue", linewidth=2.5, linestyle="-", label="cosine")
-plt.plot(X, S, color="red", linewidth=2.5, linestyle="-",  label="sine")
+plt.plot(X, S, color="red", linewidth=2.5, linestyle="-", label="sine")
 
 ax = plt.gca()
 ax.spines['right'].set_color('none')
